@@ -1,38 +1,100 @@
+body {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
+  background-color: skyblue;
+  width: 100vw;
+  height: 100vh;
+  background: url("/src/images/background.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+}
+
+.top {
+  margin-bottom: 2rem;
+}
+
+.weatherCard {
+  width: 70vw;
+  height: 60vh;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.logo {
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.img {
+  width: 200px;
+  height: 200px;
+}
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 2rem;
+}
+.text {
+  margin-right: 1rem;
+  font-weight: 600;
+}
+.errorBox {
+  width: 70vw;
+  height: 60vh;
+}
+.error {
+  width: 100%;
+  height: 100%;
+}
+.form {
+  width: 50vw;
+  height: 20vh;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cityfield {
+  margin-right: 1rem;
+  width: 30vw;
+  height: 40px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  background: transparent;
+}
+.cityfield:focus {
+  color: white;
+  outline: none;
+  background: transparent;
+}
+.button {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  background: linear-gradient(to right, yellow, orangered);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.city {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 10px 10px 20px grey;
 }
