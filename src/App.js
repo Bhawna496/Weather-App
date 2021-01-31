@@ -5,7 +5,7 @@ import Weather from './components/WeatherComponent';
 
 
 
-const API_KEY = "4238c82cdb1014803b713e52f5f2c0f1";
+const API_KEY = "YOUR_API_KEY";
 class App extends Component {
   constructor() {
     super()

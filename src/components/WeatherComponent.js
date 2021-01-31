@@ -1,6 +1,5 @@
 import React from 'react'
 import '../App.css';
-import error from '../images/error.jpeg';
 
 const Weather = (props) => {
   return (
@@ -15,11 +14,11 @@ const Weather = (props) => {
       <div className="details">
         {props.temperature && <p className="text">Temperature : {Math.round(props.temperature)}
           <sup>&deg;</sup>C</p>}
-        {props.humidity && <p className="text">Humidity : {props.humidity}%</p>}
+        {props.humidity && <p>Humidity : {props.humidity}%</p>}
       </div>
 
       {props.error && <div className="errorBox">
-        <img className="error" src={error} alt="error" />
+        {props.error}
       </div>}
     </div>
   )
